@@ -21,7 +21,7 @@ namespace CountdownLettersWPF.ViewModels
         public int VowelCount { get; set; } = 0; 
         public int ConsonantCount { get; set; } = 0;
         private string _status = string.Empty;
-        private string _gameStatus = "Start New Game";
+        private string _gameStatus = "Press Start";
 
         private int _score = 0;
         private int _round;
@@ -141,6 +141,8 @@ namespace CountdownLettersWPF.ViewModels
             {
                 // Update the status
                 Status = $"Found {_dictionary.Anagrams.Count} anagrams for '{ScrambledLetters.ToUpper()}'";
+
+                Status = $"Found {_dictionary.Anagrams.Count} anagrams - Unscramble your word.";
             }
         }
         public string ScrambledLetters

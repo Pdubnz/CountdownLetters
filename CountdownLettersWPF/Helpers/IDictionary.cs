@@ -10,5 +10,7 @@ namespace CountdownLettersWPF.Helpers
 
         bool CheckSpelling(string word);
         Task<List<string>> GetAnagrams(string inputText);
+
+        IEnumerable<string> GetLocalAnagrams(string inputText);
     }
 }

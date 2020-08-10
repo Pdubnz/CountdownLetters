@@ -67,5 +67,10 @@ namespace CountdownLettersWPF.Helpers
         {
             return _spellChecker.TestWord(word) || _anagrams.Contains(word);
         }
+
+        IEnumerable<string> IDictionary.GetLocalAnagrams(string inputText)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
