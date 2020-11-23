@@ -1,2 +1,4 @@
 # Countdown Letters Game
-Coding Challenge.
+
+
+Mvvm Desktop application
